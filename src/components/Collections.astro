@@ -1,0 +1,116 @@
+---
+// Collections section with proper alt text for images and SEO
+interface CollectionItem {
+  id: string;
+  title: string;
+  altText: string;
+  imageSrc: string;
+  span?: string;
+  description?: string;
+}
+
+const collections: CollectionItem[] = [
+  {
+    id: 'artificial-flowers',
+    title: 'Yapay Çiçek Aranjmanları',
+    altText: 'Renkli yapay çiçek aranjmanları ve vazo kombinasyonları',
+    imageSrc:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuAcOS32BcCr8E1L7IZSrY7gnKKEq2a7wRvC89gYan8Bs0dLRW8BD-72y3d6WEuP_JFuN9BhYl6Pfs4JJ2zccNs2n00cAdsHedbIhU0ORTHMXz6uh73DXdNd1WPDOYIWWeNGgxO6hyzggm6zeVtb2FcXe0CIyi898Xxd9JUec-v2dPJGVuRMAsJmiWYa9mqHjzq_aRMdD6vaRd-rpmyfKl8CTAlte3lVmIwz_RxX37-sWjT0Cx8VHl7mOBveQ7WpvFagHk82NjE0cvc',
+    span: 'md:col-span-2 md:row-span-2',
+    description: 'Sezonun trendlerini, zamansız klasikler ve el işçiliği ile harmanladık.',
+  },
+  {
+    id: 'ceramic-vases',
+    title: 'Dekoratif Vazolar',
+    altText: 'Çeşitli renk ve desenlerde dekoratif seramik vazolar',
+    imageSrc:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuDfQT-BjQlxnugR1xa_aQDuDp3VX6eekCF2y8GaSWkG9zfIXA3MAlgHTrAcFCodYMh9HfuEFH5tYfN2VgwgiEM3RXszC2zvIcprum0OKvmlqsFpnaDyCVI9y-d1qlEkTUf1oKNAfNERYdkMKCQzjdSMvTsYIqwmjQ3ztRL_wJdH6D8iTNUUcd0q7d1O-lHJz4Swk4x9DHkDOuf07sTPoU8W2EZ-1WP2DaNwQfAX64p5hQHfVhKv_AgXkN-yFgcYpAa8PSzVcIxKV6s',
+    span: 'md:col-span-1 md:row-span-1',
+  },
+  {
+    id: 'mugs-cups',
+    title: 'Kupa & Fincan Takımları',
+    altText: 'Dekoratif desenleri olan kahve kupaları ve çay fincanları',
+    imageSrc:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCP7AchV-K84-OTGOldspvxsdnnULLkgUo9lowNfdvmgQB_BLXt8paPASWMSWUSH27MDseeT-cQzCYJuS-mC3goCi62iWZkpVBtaWDAaC3e448NMxPyP1h-LWKng2DaqWcDYzjvyelyTZz9hzDcI7Z0qLWyXeRE4mRCFpaiLzbs649Zt8f43PRJG3K0MvaceOdgSpv6vMEfasS3Gd3WX38SZg0ZsvP1KwgRiQ7CbJ_fKYzsgq9r8MIE3kOQqJ-cQVwGVGkI7_pnhzM',
+    span: 'md:col-span-1 md:row-span-1',
+  },
+  {
+    id: 'seasonal-ornaments',
+    title: 'Mevsimlik Dekor ve Hediyelikler',
+    altText: 'Mevsimlik dekorasyon ürünleri ve hediye setleri',
+    imageSrc:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuA_b5tX2ceVXI46-xQlKyl6ZaxAfJZz66EGWWwIUppgzf6cgQyVz7sjMCghQsqi9uvaPJyi7hAUZJiGOlYIrrp4Mal7uWB2kuuQgAxSF5YTkNPpTv_vo8RuP4FGZk2XLH6p5R7GSF2in8-LuRd6j9kRgkh2_SZP4yHde1WfaDXtrlpdFwDKGXl7XMZ5pYfuXSMBy9GEvBEKAdSQp5CrCLWyPBhHSiuN_t1vGeVE3QbEmNsxI-xty8YrUMb1Dk_wTnPfVUcWsHB9inE',
+    span: 'md:col-span-2 md:row-span-1',
+    description: 'Her mevsimin enerjisini evinize taşıyan özel seçkiler.',
+  },
+];
+---
+
+<section
+  class="py-24 px-6 lg:px-16 bg-white"
+  data-purpose="collections"
+  id="koleksiyonlar"
+>
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+      <div class="max-w-2xl">
+        <h2 class="font-serif text-4xl md:text-5xl mb-6">Özenle Seçilmiş Koleksiyonlar</h2>
+        <p class="text-stone-500 text-lg">
+          Sezonun trendlerini, zamansız klasikler ve el işçiliği ile harmanladık. Her parça eviniz
+          için yeni bir hikaye.
+        </p>
+      </div>
+      <button
+        class="px-8 py-3 border border-stone-900 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-stone-900 hover:text-white transition-all duration-300"
+        title="Tüm ürünleri incele"
+      >
+        Tüm Ürünleri İncele
+      </button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto lg:h-[800px]">
+      {
+        collections.map((item) => (
+          <div
+            class={`${item.span || ''} relative group overflow-hidden bg-stone-100 rounded-sm`}
+          >
+            <img
+              alt={item.altText}
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src={item.imageSrc}
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+            {item.span === 'md:col-span-2 md:row-span-2' && (
+              <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent opacity-60"></div>
+            )}
+            {item.span !== 'md:col-span-2 md:row-span-2' && item.span !== 'md:col-span-2 md:row-span-1' && (
+              <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+            )}
+            {item.span === 'md:col-span-2 md:row-span-1' && (
+              <div class="absolute inset-0 bg-gradient-to-r from-stone-900/40 to-transparent"></div>
+            )}
+
+            <div
+              class={`absolute ${item.span === 'md:col-span-2 md:row-span-2' ? 'bottom-0 left-0 p-8' : item.span === 'md:col-span-2 md:row-span-1' ? 'inset-0 flex flex-col justify-center p-8' : 'inset-0 flex flex-col justify-end p-6'}`}
+            >
+              <h3
+                class={`font-serif ${item.span === 'md:col-span-2 md:row-span-2' ? 'text-3xl' : item.span === 'md:col-span-2 md:row-span-1' ? 'text-2xl mb-2' : 'text-xl'} text-white mb-${item.span === 'md:col-span-2 md:row-span-1' ? '2' : '0'}`}
+              >
+                {item.title}
+              </h3>
+              {item.description && (
+                <p class="text-stone-200 text-sm max-w-xs">{item.description}</p>
+              )}
+              {!item.description && (
+                <span class="text-stone-200 text-sm tracking-widest uppercase">Koleksiyonu Keşfet</span>
+              )}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

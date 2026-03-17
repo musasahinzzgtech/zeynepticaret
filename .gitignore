@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Astro
+dist/
+.astro/
+.env
+.env.local
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store

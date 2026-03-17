@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(wc -c dist/_astro/*.css)",
+      "Bash(ls -lh dist/_astro/*.css)",
+      "Bash(grep:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm uninstall:*)"
+    ]
+  }
+}

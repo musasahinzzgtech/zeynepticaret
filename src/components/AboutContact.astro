@@ -1,0 +1,101 @@
+---
+// About and contact section with structured data for local business
+---
+
+<section
+  class="relative py-32 flex items-center justify-center min-h-[800px]"
+  data-purpose="about-contact"
+  id="hikayemiz"
+>
+  <!-- Parallax Background -->
+  <div class="absolute inset-0 z-0">
+    <img
+      alt="Zeynep Ticaret mağaza iç mekanı ve ürün sergileme"
+      class="w-full h-full object-cover"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCrP21jlsxphGu-U_komNxxawz44W27j9cH3ObZcw5_QoGvbcmhQ8heveBxm9jPdSAhbr83RtYKdOy1VBUsQ8wBcqziMJiGpFJKUqINwqrFg2MbfWmJFILtAcCHSxewFzqV23jA5-XY6UTqpppnePkuF_8SNGTR5IDWeGKuV8NKUpnR2C1pJmvf2CF63d7rG32rcZ0Wwd8uk6SaZj9Sjz8Fjy43OProaR_6VydBvqP4z9ZS8DctkRIHO7Q-4N4QVPBqIYIZetrC7Q"
+      width="1200"
+      height="800"
+      loading="lazy"
+    />
+    <div class="absolute inset-0 bg-stone-900/30"></div>
+  </div>
+
+  <!-- Glassmorphism Card -->
+  <div
+    class="relative z-10 w-[95%] max-w-5xl glass-card rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row reveal-observer"
+    id="iletisim"
+  >
+    <!-- Left: Story -->
+    <div class="p-8 lg:p-12 md:w-3/5 border-b md:border-b-0 md:border-r border-stone-200">
+      <h2 class="font-serif text-3xl mb-8">Bizim Hikayemiz</h2>
+      <div class="space-y-6 text-stone-600 leading-relaxed">
+        <p>
+          Denizli'nin kalbinde başlayan yolculuğumuz, yerel butik anlayışını modern ev
+          dekorasyonuyla buluşturmak üzere doğdu. <strong class="text-stone-900"
+            >Zeynep Ticaret</strong
+          > olarak, sadece eşya satmıyor, yaşam alanlarınıza kimlik katacak parçaları özenle
+          seçiyoruz.
+        </p>
+        <p>
+          Geleneksel ticaretin samimiyetini dijital dünyanın hızıyla birleştirerek, ikas
+          altyapılı mağazamız üzerinden Türkiye'nin her noktasına mutluluk ulaştırıyoruz.
+        </p>
+      </div>
+      <div class="mt-10 flex gap-4 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
+        <!-- Brand Badge -->
+        <div
+          class="px-4 py-2 bg-stone-100 rounded font-bold text-xs tracking-tighter uppercase"
+        >
+          ikas Official Partner
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Contact -->
+    <div class="p-8 lg:p-12 md:w-2/5 flex flex-col justify-between bg-stone-50/50">
+      <div>
+        <h2 class="font-serif text-3xl mb-8">Bize Ulaşın</h2>
+        <address class="space-y-6 not-italic">
+          <div>
+            <p class="text-xs uppercase tracking-widest text-stone-400 mb-1">Adres</p>
+            <p class="text-stone-900 font-medium italic">
+              Denizli Butik Mağazası, Merkez Efendi, Denizli
+            </p>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-widest text-stone-400 mb-1">Telefon</p>
+            <a
+              href="tel:+905383045524"
+              class="text-stone-900 font-medium hover:text-stone-700 transition-colors"
+            >
+              0538 304 55 24
+            </a>
+          </div>
+        </address>
+      </div>
+      <div class="mt-12 space-y-4">
+        <a
+          class="flex items-center justify-center gap-3 w-full bg-[#25D366] text-white font-bold py-4 rounded-xl hover:shadow-lg hover:scale-[1.02] transition-all"
+          href="https://wa.me/905383045524"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="WhatsApp ile iletişim kurun"
+        >
+          <svg
+            class="w-6 h-6 fill-current"
+            viewbox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.29-4.464c1.562.928 3.177 1.397 4.96 1.398 5.403 0 9.8-4.398 9.802-9.8.001-2.618-1.02-5.08-2.876-6.937-1.856-1.857-4.319-2.877-6.94-2.877-5.405 0-9.802 4.398-9.804 9.8.001 1.838.513 3.635 1.478 5.198l-1.008 3.688 3.771-.989z"
+            ></path>
+          </svg>
+          WhatsApp ile Sorun
+        </a>
+        <p class="text-[10px] text-center text-stone-400 uppercase tracking-widest">
+          Çalışma Saatleri: 09:00 - 19:00
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
