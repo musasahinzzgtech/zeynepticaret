@@ -1,0 +1,59 @@
+---
+// Google Maps section with nice UI
+---
+
+<section class="w-full bg-stone-50 py-24 px-6 lg:px-16" id="harita">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col lg:flex-row gap-12 items-center">
+      <!-- Info Column -->
+      <div class="w-full lg:w-1/3">
+        <span class="inline-block text-stone-500 font-medium tracking-[0.3em] uppercase mb-4 text-xs">
+          Neredeyiz?
+        </span>
+        <h2 class="font-serif text-4xl md:text-5xl mb-8 leading-tight">
+          Mağazamızı <br /><span class="italic">Denizli'de</span> Ziyaret Edin.
+        </h2>
+        <div class="space-y-6">
+          <p class="text-stone-600 leading-relaxed text-lg">
+            Sizi en yeni koleksiyonlarımızı keşfetmeye ve sıcak bir kahve eşliğinde yaşam alanlarınızı birlikte tasarlamaya bekliyoruz.
+          </p>
+          <div class="pt-6 border-t border-stone-200">
+            <a
+              href="https://www.google.com/maps?sca_esv=5aba584b8a922c2c&sxsrf=ANbL-n4puEjQejf4UMxcEYAVyYEUN5GryA:1774391336478&kgmid=/g/11ppzcv1gq&shem=dlvsc&shndl=30&kgs=e1a1ceed519b971f&um=1&ie=UTF-8&fb=1&gl=tr&sa=X&geocode=KSlCunZdP8cUMbI_rt0kbqSp&daddr=Hac%C4%B1kaplanlar,+Bar%C4%B1%C5%9F+Cd.+No:34,+20100+Pamukkale/Denizli"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-4 text-stone-900 font-bold text-sm tracking-widest uppercase hover:gap-6 transition-all"
+            >
+              Yol Tarifi Al
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Column -->
+      <div class="w-full lg:w-2/3 h-[450px] relative rounded-2xl overflow-hidden shadow-2xl reveal-observer">
+        <!-- Grayscale Map Overlay for aesthetic -->
+        <div class="absolute inset-0 grayscale mix-blend-multiply opacity-20 pointer-events-none z-10 bg-stone-900/5"></div>
+        
+        <iframe
+          src="https://maps.google.com/maps?q=Hac%C4%B1kaplanlar%2C%20Bar%C4%B1%C5%9F%20Cd.%20No%3A34%2C%2020100%20Pamukkale%2FDenizli&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          class="w-full h-full border-0 grayscale-[0.3] hover:grayscale-0 transition-all duration-700"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        
+        <!-- Floating Address Card (Desktop only) -->
+        <div class="absolute bottom-6 left-6 z-20 hidden md:block glass-card p-6 rounded-xl max-w-xs shadow-xl border border-white/50">
+          <p class="text-[10px] uppercase font-bold tracking-widest text-stone-400 mb-2">Mağaza Adresi</p>
+          <p class="text-stone-900 font-medium text-sm italic">
+            Hacıkaplanlar, Barış Cd. No:34, 20100 Pamukkale/Denizli
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
