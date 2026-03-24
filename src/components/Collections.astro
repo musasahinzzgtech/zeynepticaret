@@ -73,7 +73,7 @@ const collections: CollectionItem[] = [
       {
         collections.map((item) => (
           <div
-            class={`${item.span || ''} relative group overflow-hidden bg-stone-100 rounded-sm`}
+            class={`${item.span || ''} relative group overflow-hidden bg-stone-100 rounded-sm img-skeleton`}
           >
             <img
               alt={item.altText}
@@ -82,6 +82,7 @@ const collections: CollectionItem[] = [
               width="600"
               height="600"
               loading="lazy"
+              decoding="async"
             />
             {item.span === 'md:col-span-2 md:row-span-2' && (
               <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent opacity-60"></div>

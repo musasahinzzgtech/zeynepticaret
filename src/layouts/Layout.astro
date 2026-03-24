@@ -68,10 +68,38 @@ const twitterHandle = '@zeynepticaret';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body class="bg-stone-50 text-stone-900 font-sans selection:bg-stone-200">
+    <!-- Global Preloader -->
+    <div
+      id="preloader"
+      class="fixed inset-0 z-[100] bg-stone-50 flex items-center justify-center transition-opacity duration-700 pointer-events-none"
+    >
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 border-t-2 border-stone-900 rounded-full animate-spin mb-4"></div>
+        <span class="font-serif text-xs tracking-[0.3em] uppercase opacity-40">ZEYNEP TİCARET</span>
+      </div>
+    </div>
+
     <slot />
 
     <script>
       import { analytics, trackEvent } from '@/lib/firebase';
+
+      // Hide preloader
+      const hidePreloader = () => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+          preloader.style.opacity = '0';
+          setTimeout(() => preloader.remove(), 700);
+        }
+      };
+
+      // Safety timeout: remove preloader after 3 seconds anyway
+      const preloaderTimeout = setTimeout(hidePreloader, 3000);
+
+      window.addEventListener('load', () => {
+        clearTimeout(preloaderTimeout);
+        hidePreloader();
+      });
 
       // Scroll reveal animation observer
       const observerOptions = {
@@ -87,6 +115,24 @@ const twitterHandle = '@zeynepticaret';
       }, observerOptions);
 
       document.querySelectorAll('.reveal-observer').forEach((el) => observer.observe(el));
+
+      // Image loading optimization: Add loaded class to images
+      document.querySelectorAll('img').forEach((img) => {
+        const markLoaded = () => {
+          img.classList.add('is-loaded');
+          const skeleton = img.closest('.img-skeleton');
+          if (skeleton) {
+            skeleton.classList.add('is-loaded');
+          }
+        };
+        
+        if (img.complete) {
+          markLoaded();
+        } else {
+          img.addEventListener('load', markLoaded);
+          img.addEventListener('error', markLoaded); 
+        }
+      });
 
       // Global event listener for custom analytics events via data attributes
       // Use data-analytics-event="event_name" and data-analytics-params='{"key":"value"}'
@@ -138,6 +184,54 @@ const twitterHandle = '@zeynepticaret';
   @media (max-width: 1024px) {
     .asymmetric-clip {
       clip-path: none;
+    }
+  }
+
+  /* Image Loading Effects */
+  img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-color: #f5f5f4; /* stone-100 */
+  }
+
+  img.is-loaded {
+    opacity: 1;
+  }
+
+  /* Skeleton Animation for images */
+  .img-skeleton {
+    position: relative;
+    overflow: hidden;
+    background: #f5f5f4;
+  }
+
+  .img-skeleton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    animation: shimmer 2s infinite;
+  }
+
+  /* Fade out the skeleton when image is loaded */
+  .img-skeleton.is-loaded::after {
+    display: none;
+  }
+  
+  .img-skeleton.is-loaded {
+    background: transparent;
+    transition: background 0.3s ease;
+  }
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
     }
   }
 </style>
