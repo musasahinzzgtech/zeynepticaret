@@ -51,6 +51,11 @@ const twitterHandle = '@zeynepticaret';
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={ogImage} />
 
+    <!-- DNS prefetch for Google Analytics to improve loading speed -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,6 +71,8 @@ const twitterHandle = '@zeynepticaret';
     <slot />
 
     <script>
+      import { analytics, trackEvent } from '@/lib/firebase';
+
       // Scroll reveal animation observer
       const observerOptions = {
         threshold: 0.1,
@@ -80,6 +87,23 @@ const twitterHandle = '@zeynepticaret';
       }, observerOptions);
 
       document.querySelectorAll('.reveal-observer').forEach((el) => observer.observe(el));
+
+      // Global event listener for custom analytics events via data attributes
+      // Use data-analytics-event="event_name" and data-analytics-params='{"key":"value"}'
+      document.addEventListener('click', (event) => {
+        const target = event.target as HTMLElement;
+        const analyticsElement = target.closest('[data-analytics-event]');
+        
+        if (analyticsElement) {
+          const eventName = analyticsElement.getAttribute('data-analytics-event');
+          const paramsString = analyticsElement.getAttribute('data-analytics-params');
+          
+          if (eventName) {
+            const params = paramsString ? JSON.parse(paramsString) : {};
+            trackEvent(eventName, params);
+          }
+        }
+      });
     </script>
   </body>
 </html>
