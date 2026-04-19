@@ -17,6 +17,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- İletişim -->
+  <url>
+    <loc>https://zeynepticaret.com/iletisim</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog Ana Sayfa -->
   <url>
     <loc>https://zeynepticaret.com/blog</loc>
