@@ -1,27 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Ana Sayfa -->
   <url>
     <loc>https://zeynepticaret.com</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Hakkımızda -->
   <url>
-    <loc>https://zeynepticaret.com/#koleksiyonlar</loc>
-    <lastmod>2026-03-17</lastmod>
+    <loc>https://zeynepticaret.com/hakkimizda</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Ana Sayfa -->
+  <url>
+    <loc>https://zeynepticaret.com/blog</loc>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- Blog: Denizli Hediyelik Eşya -->
+  <url>
+    <loc>https://zeynepticaret.com/blog/denizli-hediyelik-esya</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: 2026 Ev Dekorasyonu Trendleri -->
+  <url>
+    <loc>https://zeynepticaret.com/blog/ev-dekorasyonu-2026-trendleri</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Züccaciye Seçim Rehberi -->
+  <url>
+    <loc>https://zeynepticaret.com/blog/zuccaciye-secimi-rehberi</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Denizli Düğün Hediyeliği -->
+  <url>
+    <loc>https://zeynepticaret.com/blog/denizli-dugun-hediyeligi</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Ev Dekorasyonunda Doğallık -->
+  <url>
+    <loc>https://zeynepticaret.com/blog/ev-dekorasyonunda-dogallik</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Züccaciye ile Mutfak Dekoru -->
+  <url>
+    <loc>https://zeynepticaret.com/blog/zuccaciye-mutfak-dekoru</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Denizli Ev Aksesuarları Alışverişi -->
+  <url>
+    <loc>https://zeynepticaret.com/blog/denizli-ev-aksesuarlari-aliskanliklari</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Hash sections (ana sayfa) -->
+  <url>
+    <loc>https://zeynepticaret.com/#koleksiyonlar</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zeynepticaret.com/#hikayemiz</loc>
-    <lastmod>2026-03-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://zeynepticaret.com/#iletisim</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
+
 </urlset>

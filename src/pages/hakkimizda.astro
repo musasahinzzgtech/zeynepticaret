@@ -1,0 +1,240 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Hakkımızda | Denizli Hediyelik Eşya ve Ev Dekorasyonu"
+  description="Zeynep Ticaret hakkında her şey. Denizli'nin köklü hediyelik eşya ve züccaciye mağazası olarak hikayemizi, değerlerimizi ve Denizli'ye olan bağlılığımızı keşfedin."
+  canonical="https://zeynepticaret.com/hakkimizda"
+  ogImage="https://zeynepticaret.com/images/hero.jpg"
+>
+  <Navigation />
+
+  <main class="pt-24 bg-stone-50">
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+        <div class="max-w-3xl">
+          <p class="text-xs uppercase tracking-widest text-stone-400 mb-6">Hakkımızda</p>
+          <h1 class="font-serif text-5xl md:text-6xl font-bold leading-tight text-stone-900 mb-8">
+            Denizli'den<br class="hidden md:block" /> Evinize
+          </h1>
+          <p class="text-xl text-stone-500 leading-relaxed max-w-2xl">
+            Zeynep Ticaret; Denizli'nin köklü el sanatları geleneğini modern tasarım anlayışıyla buluşturan, evinize ve sevdiklerinize özel anlar yaşatmayı misyon edinen bir hediyelik eşya ve ev dekorasyonu mağazasıdır.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal-observer">
+          <div class="img-skeleton rounded-2xl overflow-hidden aspect-[4/3]">
+            <img
+              src="/images/hero.jpg"
+              alt="Zeynep Ticaret Denizli mağazası - hediyelik eşya ve ev dekorasyonu"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+        </div>
+        <div class="reveal-observer">
+          <p class="text-xs uppercase tracking-widest text-stone-400 mb-6">Hikayemiz</p>
+          <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-900 mb-6">
+            Denizli'nin Kalbinden Doğan Bir Tutku
+          </h2>
+          <p class="text-stone-600 leading-relaxed mb-6">
+            Zeynep Ticaret, Denizli'nin zengin kültürel dokusundan ilham alarak kurulmuş bir aile işletmesidir. Hediyelik eşya, züccaciye ve ev dekorasyonu alanında özgün ve kaliteli ürünler sunmak amacıyla başladığımız bu yolculukta, her geçen gün büyüyen müşteri ailemizle birlikte büyüyoruz.
+          </p>
+          <p class="text-stone-600 leading-relaxed mb-6">
+            Denizli; yüzyıllarca tekstil, seramik ve el sanatlarıyla dünya sahnesinde yer almış bir şehirdir. Biz de bu köklü mirasın bilinciyle, şehrimizin ustalarından temin ettiğimiz ürünleri Türkiye'nin dört bir yanındaki evlere ulaştırıyoruz.
+          </p>
+          <p class="text-stone-600 leading-relaxed">
+            Her ürünümüz seçilirken yalnızca estetik değil; kalite, sürdürülebilirlik ve özgünlük ölçütleri de gözetilmektedir. Seri üretim anlayışından uzak, her biri ayrı bir hikâye taşıyan parçalarla koleksiyonlarımızı oluşturuyoruz.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="bg-stone-100 py-16 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <p class="text-xs uppercase tracking-widest text-stone-400 mb-4">Değerlerimiz</p>
+          <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-900">
+            Bizi Biz Yapan İlkeler
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-2xl p-8 reveal-observer">
+            <div class="w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Özgünlük</h3>
+            <p class="text-stone-600 leading-relaxed">
+              Her ürün, benzersiz hikâyesiyle koleksiyonumuza katılır. Seri üretimden değil, usta ellerinden çıkan özgün tasarımlara inanırız. Denizli'nin el sanatları mirası bu özgünlüğün kaynağıdır.
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 reveal-observer">
+            <div class="w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Kalite</h3>
+            <p class="text-stone-600 leading-relaxed">
+              Koleksiyonumuzdaki her ürün, titizlikle belirlenen kalite standartlarını karşılar. Malzeme seçiminden işçilik detaylarına kadar her aşamada mükemmeli hedefliyoruz.
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 reveal-observer">
+            <div class="w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center mb-6">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Sürdürülebilirlik</h3>
+            <p class="text-stone-600 leading-relaxed">
+              Doğal malzemelere, yerel üreticilere ve çevre dostu ambalajlara verdiğimiz önem, sürdürülebilir bir geleceğe olan inancımızın yansımasıdır.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Denizli Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal-observer order-2 lg:order-1">
+          <p class="text-xs uppercase tracking-widest text-stone-400 mb-6">Neden Denizli?</p>
+          <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-900 mb-6">
+            Denizli'nin Gücü: Kültür, Zanaat ve Kalite
+          </h2>
+          <p class="text-stone-600 leading-relaxed mb-6">
+            Denizli, Türkiye'nin en önemli üretim ve ticaret merkezlerinden biridir. Şehrimiz; dünya kalitesinde tekstil, seramik ve el sanatları üretimiyle tanınmaktadır. Bu güçlü üretim altyapısı, bizlere kaliteli ve özgün ürünlere erişim imkânı sunmaktadır.
+          </p>
+          <p class="text-stone-600 leading-relaxed mb-6">
+            Denizli hediyelik eşya sektörü, şehrimizin bu güçlü üretim temeli üzerinde yükselmektedir. Zeynep Ticaret olarak Denizli'nin bu potansiyelini tüm Türkiye'ye taşımak ve şehrimizin markasına katkıda bulunmak temel hedeflerimizden biridir.
+          </p>
+          <p class="text-stone-600 leading-relaxed">
+            Denizli züccaciye ve ev dekorasyonu ürünlerini diğerlerinden ayıran; yerel ustaların derin bilgisi, özenli işçilik ve bölgeye özgü tasarım anlayışıdır. Biz bu değerleri yaşatmak ve aktarmak için buradayız.
+          </p>
+        </div>
+        <div class="reveal-observer order-1 lg:order-2">
+          <div class="img-skeleton rounded-2xl overflow-hidden aspect-[4/3]">
+            <img
+              src="/images/homedecoration.jpg"
+              alt="Denizli ev dekorasyonu ürünleri - Zeynep Ticaret"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="bg-stone-900 py-16 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-8 text-center">
+          <div class="reveal-observer">
+            <p class="font-serif text-5xl font-bold text-white mb-2">500+</p>
+            <p class="text-stone-400 text-sm uppercase tracking-widest">Özgün Ürün</p>
+          </div>
+          <div class="reveal-observer">
+            <p class="font-serif text-5xl font-bold text-white mb-2">81</p>
+            <p class="text-stone-400 text-sm uppercase tracking-widest">İl'e Teslimat</p>
+          </div>
+          <div class="reveal-observer">
+            <p class="font-serif text-5xl font-bold text-white mb-2">%100</p>
+            <p class="text-stone-400 text-sm uppercase tracking-widest">Denizli Menşei</p>
+          </div>
+          <div class="reveal-observer">
+            <p class="font-serif text-5xl font-bold text-white mb-2">★★★★★</p>
+            <p class="text-stone-400 text-sm uppercase tracking-widest">Müşteri Memnuniyeti</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div class="text-center mb-12">
+        <p class="text-xs uppercase tracking-widest text-stone-400 mb-4">Koleksiyonlarımız</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-900 mb-4">
+          Zeynep Ticaret'te Neler Bulursunuz?
+        </h2>
+        <p class="text-stone-500 max-w-xl mx-auto">
+          Denizli'nin en özel ev dekorasyonu ve hediyelik eşya ürünlerini üç ana kategoride sunuyoruz.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-8 rounded-2xl bg-stone-100 reveal-observer">
+          <div class="img-skeleton rounded-xl overflow-hidden aspect-square mb-6 mx-auto w-32">
+            <img src="/images/vase.jpg" alt="Denizli hediyelik eşya koleksiyonu" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Hediyelik Eşya</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Düğün, doğum günü, ev açılışı ve tüm özel günler için Denizli'den gelen özgün hediyeler.
+          </p>
+        </div>
+        <div class="text-center p-8 rounded-2xl bg-stone-100 reveal-observer">
+          <div class="img-skeleton rounded-xl overflow-hidden aspect-square mb-6 mx-auto w-32">
+            <img src="/images/teaset.jpg" alt="Denizli züccaciye koleksiyonu" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Züccaciye</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Çay setleri, servis takımları, vazolar ve mutfak aksesuarlarından oluşan kapsamlı züccaciye koleksiyonu.
+          </p>
+        </div>
+        <div class="text-center p-8 rounded-2xl bg-stone-100 reveal-observer">
+          <div class="img-skeleton rounded-xl overflow-hidden aspect-square mb-6 mx-auto w-32">
+            <img src="/images/homedecoration.jpg" alt="Denizli ev dekorasyonu" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Ev Dekorasyonu</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Yaşam alanlarınızı dönüştürecek dekoratif objeler, tablolar, mumluklar ve doğal aksesuarlar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="max-w-7xl mx-auto px-6 pb-16">
+      <div class="bg-stone-100 rounded-2xl p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div>
+          <h2 class="font-serif text-2xl md:text-3xl font-bold text-stone-900 mb-3">
+            Denizli'deki Mağazamızı Ziyaret Edin
+          </h2>
+          <p class="text-stone-500 max-w-lg">
+            Koleksiyonumuzu yerinde görmek ve Denizli'nin sıcaklığını hissetmek için mağazamıza bekleriz. Online alışveriş için de her zaman yanınızdayız.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+          <a
+            href="https://store.zeynepticaretdenizli.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center bg-stone-900 text-white text-sm font-medium px-8 py-3 rounded-full hover:bg-stone-800 transition-all whitespace-nowrap"
+          >
+            Online Mağaza
+          </a>
+          <a
+            href="/#iletisim"
+            class="inline-flex items-center justify-center border border-stone-300 text-stone-700 text-sm font-medium px-8 py-3 rounded-full hover:border-stone-600 transition-all whitespace-nowrap"
+          >
+            İletişim
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</Layout>

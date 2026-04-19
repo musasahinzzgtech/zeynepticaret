@@ -3,50 +3,97 @@
 ---
 
 <footer class="bg-stone-100 py-16 px-6 border-t border-stone-200">
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-    <div class="text-center md:text-left">
-      <h4 class="font-serif text-xl font-bold tracking-[0.2em] mb-2 uppercase">ZEYNEP TİCARET</h4>
-      <p class="text-stone-500 text-sm italic">Evinizdeki huzurlu dokunuş.</p>
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Main footer grid -->
+    <div class="grid md:grid-cols-4 gap-10 mb-12">
+
+      <!-- Brand -->
+      <div class="md:col-span-1">
+        <a href="/" title="Zeynep Ticaret Denizli - Ana Sayfa">
+          <h4 class="font-serif text-xl font-bold tracking-[0.2em] mb-2 uppercase">ZEYNEP TİCARET</h4>
+        </a>
+        <p class="text-stone-500 text-sm italic mb-4">Evinizdeki huzurlu dokunuş.</p>
+        <address class="not-italic text-stone-500 text-sm leading-relaxed">
+          <strong class="text-stone-700 not-italic">Denizli</strong>, Türkiye<br />
+          Denizli Hediyelik Eşya &amp; Züccaciye
+        </address>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h5 class="text-xs font-bold uppercase tracking-widest text-stone-700 mb-4">Sayfalar</h5>
+        <nav class="flex flex-col gap-3 text-sm text-stone-500">
+          <a href="/" class="hover:text-stone-900 transition-colors" title="Ana Sayfa">Ana Sayfa</a>
+          <a href="/hakkimizda" class="hover:text-stone-900 transition-colors" title="Denizli Zeynep Ticaret Hakkımızda">Hakkımızda</a>
+          <a href="/blog" class="hover:text-stone-900 transition-colors" title="Hediyelik eşya ve ev dekoru blogu">Blog</a>
+          <a href="/#iletisim" class="hover:text-stone-900 transition-colors" title="İletişim">İletişim</a>
+        </nav>
+      </div>
+
+      <!-- Blog Categories -->
+      <div>
+        <h5 class="text-xs font-bold uppercase tracking-widest text-stone-700 mb-4">Blog</h5>
+        <nav class="flex flex-col gap-3 text-sm text-stone-500">
+          <a href="/blog/denizli-hediyelik-esya" class="hover:text-stone-900 transition-colors">Denizli Hediyelik Eşya</a>
+          <a href="/blog/zuccaciye-secimi-rehberi" class="hover:text-stone-900 transition-colors">Züccaciye Rehberi</a>
+          <a href="/blog/ev-dekorasyonu-2026-trendleri" class="hover:text-stone-900 transition-colors">Ev Dekorasyonu Trendleri</a>
+          <a href="/blog/denizli-dugun-hediyeligi" class="hover:text-stone-900 transition-colors">Düğün Hediyeliği</a>
+        </nav>
+      </div>
+
+      <!-- Social & Store -->
+      <div>
+        <h5 class="text-xs font-bold uppercase tracking-widest text-stone-700 mb-4">Bizi Takip Edin</h5>
+        <nav class="flex flex-col gap-3 text-sm text-stone-500">
+          <a
+            href="https://www.instagram.com/zeynepticarett/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-stone-900 transition-colors"
+            title="Zeynep Ticaret Instagram"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.facebook.com/zeynepticaretz"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-stone-900 transition-colors"
+            title="Zeynep Ticaret Facebook"
+          >
+            Facebook
+          </a>
+          <a
+            href="https://store.zeynepticaretdenizli.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-stone-900 transition-colors"
+            title="Zeynep Ticaret Online Mağaza"
+          >
+            Online Mağaza
+          </a>
+        </nav>
+      </div>
+
     </div>
 
-    <nav class="flex gap-8 text-xs font-bold uppercase tracking-widest text-stone-500">
-      <a
-        href="https://www.instagram.com/zeynepticarett/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-stone-900 transition-colors"
-      >
-        Instagram
-      </a>
-      <a
-        href="https://www.facebook.com/zeynepticaretz"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-stone-900 transition-colors"
-      >
-        Facebook
-      </a>
-      <a
-        href="https://store.zeynepticaretdenizli.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-stone-900 transition-colors"
-      >
-        Mağaza
-      </a>
-    </nav>
-
-    <div class="text-stone-500 text-sm text-center md:text-right">
-      © 2026 Zeynep Ticaret. Tüm hakları saklıdır. Altyapı:
-      <a
-        class="font-bold text-stone-900 hover:underline"
-        href="https://store.zeynepticaretdenizli.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="İkas e-ticaret platformu"
-      >
-        IKAS
-      </a>
+    <!-- Bottom bar -->
+    <div class="pt-8 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center gap-4 text-stone-400 text-xs">
+      <p>© 2026 Zeynep Ticaret Denizli. Tüm hakları saklıdır.</p>
+      <p>
+        Altyapı:
+        <a
+          class="font-bold text-stone-500 hover:text-stone-900 transition-colors"
+          href="https://store.zeynepticaretdenizli.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="İkas e-ticaret platformu"
+        >
+          IKAS
+        </a>
+      </p>
     </div>
+
   </div>
 </footer>

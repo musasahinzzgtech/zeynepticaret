@@ -1,0 +1,167 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+
+const posts = [
+  {
+    slug: 'denizli-hediyelik-esya',
+    category: 'Hediyelik Eşya',
+    title: 'Denizli Hediyelik Eşya: Sevdiklerinize En Özel Hediyeler',
+    excerpt: 'Denizli\'nin en güzel hediyelik eşya seçeneklerini keşfedin. Vazo, dekoratif objeler ve daha fazlası.',
+    date: '20 Nisan 2026',
+    datetime: '2026-04-20',
+    readTime: '6 dk',
+    image: '/images/hero.jpg',
+    imageAlt: 'Denizli hediyelik eşya koleksiyonu',
+  },
+  {
+    slug: 'ev-dekorasyonu-2026-trendleri',
+    category: 'Ev Dekorasyonu',
+    title: '2026 Ev Dekorasyonu Trendleri: Denizli\'den İlham Alın',
+    excerpt: 'Doğal malzemeler, toprak tonları ve el işçiliği. 2026\'nın ev dekorasyonu dünyasını şekillendiren trendler.',
+    date: '18 Nisan 2026',
+    datetime: '2026-04-18',
+    readTime: '7 dk',
+    image: '/images/homedecoration.jpg',
+    imageAlt: '2026 ev dekorasyonu trendleri',
+  },
+  {
+    slug: 'zuccaciye-secimi-rehberi',
+    category: 'Züccaciye',
+    title: 'Züccaciye Seçim Rehberi: Eviniz İçin En Doğru Ürünler',
+    excerpt: 'Züccaciye ürünlerini seçerken nelere dikkat etmelisiniz? Denizli\'den uzman tavsiyeler.',
+    date: '15 Nisan 2026',
+    datetime: '2026-04-15',
+    readTime: '8 dk',
+    image: '/images/teaset.jpg',
+    imageAlt: 'Züccaciye ürünleri seçimi',
+  },
+  {
+    slug: 'denizli-dugun-hediyeligi',
+    category: 'Düğün & Çeyiz',
+    title: 'Denizli Düğün Hediyeliği: Gelinlere Özel Ev Aksesuarları',
+    excerpt: 'Düğün sezonu için çeyiz listesi ve özel hediye seçenekleri. Gelinlik sepetlerinden ev açılışı hediyelerine.',
+    date: '12 Nisan 2026',
+    datetime: '2026-04-12',
+    readTime: '7 dk',
+    image: '/images/vase.jpg',
+    imageAlt: 'Düğün hediyeliği vazo koleksiyonu',
+  },
+  {
+    slug: 'ev-dekorasyonunda-dogallik',
+    category: 'Doğal Yaşam',
+    title: 'Ev Dekorasyonunda Doğallık: Çiçek, Vazo ve Saksı Seçimi',
+    excerpt: 'Canlı ve kurutulmuş çiçekler, bitkiler ve doğal aksesuarlarla evinize nefes aldırın.',
+    date: '10 Nisan 2026',
+    datetime: '2026-04-10',
+    readTime: '6 dk',
+    image: '/images/flower.jpg',
+    imageAlt: 'Ev dekorasyonunda çiçek ve vazo',
+  },
+  {
+    slug: 'zuccaciye-mutfak-dekoru',
+    category: 'Züccaciye',
+    title: 'Züccaciye ile Mutfak Dekoru: Denizli\'nin En Güzel Ürünleri',
+    excerpt: 'Mutfağınızı züccaciye ürünleriyle yeniden keşfedin. Sofra düzeni, tezgâh dekorasyonu ve açık raf fikirleri.',
+    date: '8 Nisan 2026',
+    datetime: '2026-04-08',
+    readTime: '6 dk',
+    image: '/images/teaset.jpg',
+    imageAlt: 'Züccaciye mutfak dekorasyonu',
+  },
+  {
+    slug: 'denizli-ev-aksesuarlari-aliskanliklari',
+    category: 'Alışveriş Rehberi',
+    title: 'Denizli\'de Ev Aksesuarı Alışverişi: Neyi, Nereden Almalı?',
+    excerpt: 'Denizli\'nin zengin ticaret kültüründe akıllıca alışveriş yapmak için kapsamlı rehber.',
+    date: '5 Nisan 2026',
+    datetime: '2026-04-05',
+    readTime: '7 dk',
+    image: '/images/hero.jpg',
+    imageAlt: 'Denizli ev aksesuarı alışverişi',
+  },
+];
+---
+
+<Layout
+  title="Blog: Denizli Hediyelik Eşya, Züccaciye ve Ev Dekorasyonu"
+  description="Zeynep Ticaret blogu: Denizli hediyelik eşya, züccaciye seçimi ve ev dekorasyonu hakkında uzman içerikler. SEO odaklı, bilgilendirici makaleler."
+  canonical="https://zeynepticaret.com/blog"
+  ogImage="https://zeynepticaret.com/images/hero.jpg"
+>
+  <Navigation />
+
+  <main class="pt-24 pb-16 bg-stone-50">
+
+    <!-- Hero -->
+    <section class="max-w-7xl mx-auto px-6 mb-16">
+      <div class="text-center max-w-2xl mx-auto">
+        <p class="text-xs uppercase tracking-widest text-stone-400 mb-4">Zeynep Ticaret</p>
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-stone-900 mb-6">
+          Blog & İlham
+        </h1>
+        <p class="text-lg text-stone-500 leading-relaxed">
+          Denizli'den ev dekorasyonu, züccaciye ve hediyelik eşya dünyasına dair uzman içerikler. Evinizi dönüştürmek için ilham alın.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="max-w-7xl mx-auto px-6 mb-16">
+      <a href={`/blog/${posts[0].slug}`} class="group block">
+        <div class="bg-white rounded-2xl border border-stone-200 hover:border-stone-400 transition-colors p-8 lg:p-12">
+          <p class="text-xs uppercase tracking-widest text-stone-400 mb-3">{posts[0].category} · Öne Çıkan</p>
+          <h2 class="font-serif text-2xl md:text-3xl font-bold text-stone-900 mb-4 group-hover:text-stone-600 transition-colors">
+            {posts[0].title}
+          </h2>
+          <p class="text-stone-500 leading-relaxed mb-6 max-w-2xl">{posts[0].excerpt}</p>
+          <div class="flex items-center gap-4 text-sm text-stone-400">
+            <time datetime={posts[0].datetime}>{posts[0].date}</time>
+            <span>·</span>
+            <span>{posts[0].readTime} okuma</span>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Post Grid -->
+    <section class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {posts.slice(1).map(post => (
+          <a href={`/blog/${post.slug}`} class="group block bg-white rounded-2xl border border-stone-200 hover:border-stone-400 transition-colors p-6">
+            <p class="text-xs uppercase tracking-widest text-stone-400 mb-2">{post.category}</p>
+            <h2 class="font-serif text-lg font-bold text-stone-900 mb-3 group-hover:text-stone-600 transition-colors leading-snug">
+              {post.title}
+            </h2>
+            <p class="text-stone-500 text-sm leading-relaxed mb-4 line-clamp-2">{post.excerpt}</p>
+            <div class="flex items-center gap-3 text-xs text-stone-400">
+              <time datetime={post.datetime}>{post.date}</time>
+              <span>·</span>
+              <span>{post.readTime} okuma</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-7xl mx-auto px-6 mt-20">
+      <div class="bg-stone-900 rounded-2xl p-10 md:p-16 text-center">
+        <h2 class="font-serif text-3xl font-bold text-white mb-4">Denizli'nin En Güzel Ürünleri Sizi Bekliyor</h2>
+        <p class="text-stone-400 mb-8 max-w-xl mx-auto">Hediyelik eşya, züccaciye ve ev dekorasyonu koleksiyonumuzu keşfedin. Denizli'den tüm Türkiye'ye hızlı teslimat.</p>
+        <a
+          href="https://store.zeynepticaretdenizli.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center bg-white text-stone-900 text-sm font-medium px-8 py-4 rounded-full hover:bg-stone-100 transition-all"
+        >
+          Online Mağazayı Ziyaret Et
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</Layout>
